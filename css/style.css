@@ -1,0 +1,891 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-padding-top: 0px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #FFFFFF;
+    color: #000000;
+}
+
+main {
+    margin-top: 30px;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 120px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 120px;
+    height: 108px;
+}
+
+.nav-logo {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #000;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 88px;
+}
+
+.nav-links a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #096543;
+    text-decoration: none;
+}
+
+.nav-btn {
+    width: 260px;
+    height: 48px;
+    border: 1px solid #096543;
+    border-radius: 10px;
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #096543;
+    cursor: pointer;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.burger span {
+    width: 28px;
+    height: 3px;
+    background: #096543;
+    border-radius: 2px;
+}
+
+.hero {
+    background: #096543;
+    border-radius: 25px;
+    padding: 0 50px;
+    min-height: 389px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.hero-sub {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.btn-green {
+    background: #5EC59F;
+    border-radius: 10px;
+    border: none;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    cursor: pointer;
+}
+
+.btn-hero {
+    width: 357px;
+    height: 48px;
+}
+
+.hero-img {
+    width: 619px;
+    height: 325px;
+    border-radius: 15px;
+    object-fit: fill;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 48px;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 100px;
+}
+
+.about-card {
+    background: #32A57B;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.about-card img {
+    width: 100%;
+    height: 316px;
+    object-fit: cover;
+    display: block;
+    border-radius: inherit;
+}
+
+.about-card-label {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    padding: 8px 0 10px;
+}
+
+.features-section,
+.how-section {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    gap: 10%;
+    margin-bottom: 100px;
+}
+
+.feature-card-block:last-child {
+    margin-top: 200px;
+}
+
+.feature-card {
+    background: #32A57B;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.feature-card img {
+    width: 100%;
+    display: block;
+}
+
+.feature-card.tall img {
+    object-fit: cover;
+}
+
+.feature-card.wide img {
+    object-fit: cover;
+}
+
+.feature-label {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    padding: 20px 10px;
+    color: #000000;
+}
+
+.how-steps {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.step-circle {
+    width: 122px;
+    height: 122px;
+    border-radius: 50%;
+    background: #32A57B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+
+.step-label {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7%;
+    margin-bottom: 100px;
+}
+
+.review-card {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.review-top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.review-name {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #1A2E28;
+}
+
+.review-stars {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    line-height: 19px;
+    color: #F39C12;
+}
+
+.review-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.cta {
+    background: #096543;
+    border-radius: 25px;
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.cta h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+.cta p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.cta-btns {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.btn-cta {
+    width: 255px;
+    height: 48px;
+}
+
+footer {
+    background: #096543;
+    padding: 40px 120px 28px;
+    margin-top: 35px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-contact {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+.footer-social {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 160px;
+}
+
+.footer-social img {
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-nav a {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    display: flex;
+    gap: 20px;
+    padding-top: 24px;
+}
+
+.footer-bottom span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 1600px) {
+    .container {
+        padding: 0 80px;
+    }
+
+    nav {
+        padding: 0 80px;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 48px;
+    }
+
+    footer {
+        padding: 40px 80px 28px;
+    }
+
+    .hero-img {
+        width: 472px;
+        height: 325px;
+    }
+
+    .hero-title {
+        font-size: 48px;
+        line-height: 72px;
+    }
+
+    .hero-sub {
+        font-size: 16px;
+    }
+
+    .btn-hero {
+        width: 265px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 1240px) {
+    main {
+        margin-top: 0px;
+    }
+
+    section {
+        padding-top: 20px;
+    }
+
+    .container {
+        padding: 0 48px;
+    }
+
+    nav {
+        padding: 0 48px;
+        height: 82px;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .nav-btn {
+        width: 193px;
+        font-size: 16px;
+    }
+
+    footer {
+        padding: 28px 48px 20px;
+    }
+
+    .hero {
+        margin-bottom: 50px;
+    }
+
+    .hero-title {
+        font-size: 48px;
+        line-height: 52px;
+    }
+
+    .hero-img {
+        width: 422px;
+        height: 325px;
+    }
+
+    .btn-hero {
+        width: 192px;
+    }
+
+    .section-title {
+        font-size: 36px;
+        line-height: 54px;
+        margin-bottom: 40px;
+    }
+
+    .about-grid {
+        margin-bottom: 50px;
+    }
+
+    .about-card img {
+        height: 203px;
+    }
+
+    .about-card-label {
+        font-size: 12px;
+    }
+
+    .features-grid {
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .feature-card-block:last-child {
+        margin-top: 0;
+        align-self: flex-end;
+    }
+
+    .feature-label {
+        font-size: 20px;
+    }
+
+    .how-steps {
+        margin-bottom: 50px;
+    }
+
+    .step-circle {
+        width: 88px;
+        height: 88px;
+        font-size: 24px;
+    }
+
+    .step-label {
+        font-size: 18px;
+    }
+
+    .reviews-grid {
+
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+
+    .review-text {
+        font-size: 16px;
+    }
+
+    .review-name,
+    .review-stars {
+        font-size: 16px;
+    }
+
+    .footer-contact {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .footer-social {
+        gap: 70px;
+    }
+
+    .footer-nav a {
+        font-size: 12px;
+    }
+
+    .footer-social img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer-bottom span {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        padding: 0 32px;
+    }
+
+    nav {
+        padding: 16px 32px;
+        height: 70px;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .nav-links a {
+        font-size: 15px;
+    }
+
+    .nav-btn {
+        width: 164px;
+        font-size: 12px;
+        height: 38px;
+    }
+
+    footer {
+        padding: 28px 32px 20px;
+        margin-top: 40px;
+    }
+
+    .hero {
+        padding: 32px;
+        min-height: 427px;
+        margin-bottom: 60px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-img {
+        width: 100%;
+        max-width: 328px;
+        height: 363px;
+    }
+
+    .btn-hero {
+        margin: 0 auto;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin-bottom: 60px;
+    }
+
+    .about-grid .about-card:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .about-card img {
+        height: 188px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin-bottom: 60px;
+    }
+
+    .how-steps {
+        margin-bottom: 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        max-width: 70%;
+        margin: 0 auto;
+        margin-bottom: 32px;
+    }
+
+    .reviews-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-bottom: 60px;
+    }
+
+    .footer-contact {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .footer-social img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .footer-nav a {
+        font-size: 12px;
+    }
+
+    .footer-bottom span {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    nav {
+        padding: 16px 16px;
+        height: auto;
+        position: relative;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #FFFFFF;
+        flex-direction: column;
+        gap: 12px;
+        padding: 16px;
+        z-index: 100;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    footer {
+        padding: 28px 16px 20px;
+        margin-top: 40px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 24px;
+        min-height: 526px;
+        margin-bottom: 32px;
+    }
+
+    .hero-title {
+        font-size: 36px;
+        line-height: 45px;
+    }
+
+    .hero-sub {
+        font-size: 14px;
+    }
+
+    .hero-img {
+        width: 310px;
+        height: 247px;
+    }
+
+    .btn-hero {
+        width: 155px;
+        height: 38px;
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 32px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-bottom: 32px;
+    }
+
+    .about-grid .about-card:last-child {
+        grid-column: auto;
+    }
+
+    .about-card img {
+        height: 203px;
+    }
+
+    .features-grid {
+        gap: 32px;
+        margin-bottom: 32px;
+    }
+
+    .feature-card.tall img {
+        height: 353px;
+    }
+
+    .feature-card.wide img {
+        height: 431px;
+    }
+
+    .feature-label {
+        font-size: 20px;
+        padding: 12px;
+    }
+
+    .how-steps {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        max-width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .step-circle {
+        width: 88px;
+        height: 88px;
+        font-size: 24px;
+    }
+
+    .step-label {
+        font-size: 18px;
+    }
+
+    .reviews-grid {
+        margin-bottom: 32px;
+    }
+
+    .cta {
+        padding: 24px 16px;
+    }
+
+    .cta h2 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .cta p {
+        font-size: 16px;
+    }
+
+    .btn-cta {
+        width: 204px;
+        height: 38px;
+        font-size: 14px;
+    }
+
+    .cta-btns {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .footer-top {
+        gap: 24px;
+    }
+
+    .footer-contact {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .footer-social {
+        gap: 20px;
+        transform: translate(-50%, 120%);
+    }
+
+    .footer-social img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer-nav a {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .footer-bottom {
+        gap: 15px;
+    }
+
+    .footer-bottom span {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .hero-img {
+        width: 100%;
+    }
+
+    .step-circle {
+        width: 70px;
+        height: 70px;
+        font-size: 20px;
+    }
+
+    .step-label {
+        font-size: 14px;
+    }
+}
